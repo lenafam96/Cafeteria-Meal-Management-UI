@@ -301,6 +301,8 @@ const WeeklyView = ({ onBack }: { onBack: () => void }) => {
   const [dates, setDates] = useState<string[]>([]);
   const [loading, setLoading] = useState(true);
 
+  console.log(dates, ChefHat, RefreshCw)
+
   useEffect(() => {
     fetchAPI('/weekly')
       .then(data => {
